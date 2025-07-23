@@ -1,8 +1,8 @@
 # Paper Link Formatter
-- 一个简单的工具，可以扫描指定目录下的 Markdown 文件，查找 arXiv 链接，并将其替换为包含标题、作者和引用数等的规范化格式。
+- 一个简单的工具，可以扫描指定目录下的 Markdown 文件，查找 arxiv 链接，并将其替换为包含标题、作者和引用数等的规范化格式。
 
 ## 功能
-- 从文件中提取裸露的 arXiv.org 链接。
+- 从文件中提取裸露的 arxiv.org 链接。
 
 - 调用 Semantic Scholar API 获取论文元数据（标题、作者、引用数）。
 
