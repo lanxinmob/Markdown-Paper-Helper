@@ -1,26 +1,17 @@
 # Paper Link Formatter
-
-一个命令行工具，可以自动扫描 Markdown 文件，查找 arXiv 链接，并将其替换为包含标题、作者和引用数的规范化格式。
+- 一个简单的软件，可以扫描指定目录下的 Markdown 文件，查找 arXiv 链接，并将其替换为包含标题、作者和引用数等的规范化格式。
 
 ## 功能
-- 使用 Git 自动检测已修改的 Markdown 文件。
-- 从文件中提取 arXiv 链接。
-- 调用 Semantic Scholar API 获取论文元数据。
-- 自动将裸露的 URL 替换为 `[标题 - 作者](链接) (引用数)` 的格式。
+- 从文件中提取裸露的 arXiv.org 链接。
 
-## 安装
-1. 克隆本仓库：
-   `git clone https://github.com/your-username/paper-formatter.git`
-2. 进入项目目录：
-   `cd paper-formatter`
-3. 安装依赖：
-   `pip install -r requirements.txt`
+- 调用 Semantic Scholar API 获取论文元数据（标题、作者、引用数）。
+
+- 自动将链接替换为 [标题 - 作者](链接) (引用数) [PDF](本地路径)的格式。
+
+- 自动下载链接对应的 PDF 文件。
 
 ## 使用方法
-直接在终端中运行脚本，并将 Markdown 文件路径作为参数传入：
+- 下载`release`
 
-# 只格式化链接，不下载 PDF
-python format_papers.py "D:/poem/"
+- 运行`run.bat`，出现弹窗选择你的笔记仓库路径。
 
-# 格式化链接，并且下载 PDF
-python format_papers.py "D:/poem/" --download
